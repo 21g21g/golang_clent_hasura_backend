@@ -1,0 +1,1 @@
+CREATE TABLE "characterepisode"."characterepisode" ("character_id" serial NOT NULL, "episode_id" serial NOT NULL, PRIMARY KEY ("character_id","episode_id") , FOREIGN KEY ("character_id") REFERENCES "CharacterSchema"."character"("id") ON UPDATE restrict ON DELETE restrict, FOREIGN KEY ("episode_id") REFERENCES "EpisodeSchema"."episode"("id") ON UPDATE restrict ON DELETE restrict);

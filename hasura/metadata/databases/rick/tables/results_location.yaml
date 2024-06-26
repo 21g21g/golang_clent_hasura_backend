@@ -1,0 +1,13 @@
+table:
+  name: location
+  schema: results
+array_relationships:
+  - name: residents
+    using:
+      manual_configuration:
+        column_mapping:
+          id: location_id
+        insertion_order: null
+        remote_table:
+          name: character
+          schema: results

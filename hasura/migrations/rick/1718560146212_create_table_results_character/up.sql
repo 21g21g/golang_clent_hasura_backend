@@ -1,0 +1,1 @@
+CREATE TABLE "results"."character" ("id" serial NOT NULL, "name" text NOT NULL, "status" text NOT NULL, "species" text NOT NULL, "type" text NOT NULL, "gender" text NOT NULL, "origin" JSONB NOT NULL, "location" jsonb NOT NULL, "image" text NOT NULL, "episode" text[] NOT NULL, "url" text NOT NULL, "created" timestamptz NOT NULL, PRIMARY KEY ("id") );

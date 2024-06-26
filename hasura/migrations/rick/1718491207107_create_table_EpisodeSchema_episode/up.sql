@@ -1,0 +1,1 @@
+CREATE TABLE "EpisodeSchema"."episode" ("id" serial NOT NULL, "name" text NOT NULL, "air_date" text NOT NULL, "episode" text NOT NULL, "characters" text[] NOT NULL, "url" text NOT NULL, "created_at" timestamptz NOT NULL DEFAULT now(), PRIMARY KEY ("id") );

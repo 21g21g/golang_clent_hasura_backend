@@ -1,0 +1,20 @@
+inorder to use graphql client with golang first of all we initialise go mudules first by shifting to
+your want directory and using this go mod init <module-path> (<module-path=>give the name of this as you want)
+then after make this install graphql clent by using go get github.com/graphql and then create action using hasura console.
+
+#to use hasura cli first i install it by usingcurl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
+#then run the command hasura init and i the config.yml file i give localhost that are the same as docker-compose.yml after that run hasura console
+#inorder to create many to many relationship first create table for both and example character_id and episode_id and make both primary key and create a foreinkey relationship between them and from character table create array relationship two the table that contains both and from the episode table the same and lastly create an objectrelationship from the table that contain both to each individual tables.
+#the relationship between location and character is one to many and the relationship between character and location is one to one
+#native query in hasura console is used to change rename feids for multipl fields.
+#hasura actions:
+#for authenticatin there must be private and public and private key.
+#remotesheam in hasyra console used to join two two graph ql schema togather.
+#event in hasura console inrder to annunce somtheing when something is created for example when one registerd in our database send message to telegram account
+#crone trigger used to announce time based .
+#folder structure graph,server
+
+# inorder to accept payload from hasura on go server hasura go graph ql client to access hasura at backend
+
+#.env.hasura for secret things.
+bytes.NewBuffer() is used to data structure or object into a format that can be easily stored, transmitted, or reconstructed later. In the context of programming and data.

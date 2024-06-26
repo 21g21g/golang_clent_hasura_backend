@@ -1,0 +1,1 @@
+CREATE TABLE "CharacterSchema"."character" ("id" serial, "name" text NOT NULL, "status" text NOT NULL, "species" text NOT NULL, "type" text NOT NULL, "gender" text NOT NULL, "origin" jsonb NOT NULL, "location" jsonb NOT NULL, "image" text NOT NULL, "episode" text[] NOT NULL, "url" text NOT NULL, "created_at" timestamptz NOT NULL DEFAULT now(), PRIMARY KEY ("id") );

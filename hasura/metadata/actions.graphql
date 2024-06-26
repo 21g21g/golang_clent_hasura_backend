@@ -1,0 +1,24 @@
+type Mutation {
+  locationType(
+    id: Int!
+    type: String!
+  ): LocationOut
+}
+
+type Mutation {
+  updateChars(
+    id: Int!
+    name: String!
+  ): updateOutput
+}
+
+type updateOutput {
+  id: Int!
+  name: String!
+}
+
+type LocationOut {
+  id: Int!
+  type: String!
+}
+

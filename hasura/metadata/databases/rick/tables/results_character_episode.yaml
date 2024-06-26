@@ -1,0 +1,10 @@
+table:
+  name: character_episode
+  schema: results
+object_relationships:
+  - name: character
+    using:
+      foreign_key_constraint_on: character_id
+  - name: episode
+    using:
+      foreign_key_constraint_on: episode_id

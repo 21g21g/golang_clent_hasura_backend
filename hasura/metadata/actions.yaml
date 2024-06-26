@@ -1,0 +1,26 @@
+actions:
+  - name: locationType
+    definition:
+      kind: synchronous
+      handler: '{{EXPRESS_SERVER_URL}}/locationtype'
+      request_transform:
+        method: POST
+        query_params: {}
+        template_engine: Kriti
+        version: 2
+  - name: updateChars
+    definition:
+      kind: synchronous
+      handler: '{{EXPRESS_SERVER_URL}}/changename'
+      request_transform:
+        method: POST
+        query_params: {}
+        template_engine: Kriti
+        version: 2
+custom_types:
+  enums: []
+  input_objects: []
+  objects:
+    - name: updateOutput
+    - name: LocationOut
+  scalars: []

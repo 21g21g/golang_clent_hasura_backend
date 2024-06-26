@@ -1,0 +1,1 @@
+CREATE TABLE "results"."episode" ("id" serial NOT NULL, "name" text NOT NULL, "air_date" text NOT NULL, "episode" text NOT NULL, "characters" text[] NOT NULL, "url" text NOT NULL, "created" timestamptz NOT NULL, PRIMARY KEY ("id") );

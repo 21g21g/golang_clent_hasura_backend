@@ -1,0 +1,1 @@
+CREATE TABLE "results"."location" ("id" serial NOT NULL, "name" text NOT NULL, "type" text NOT NULL, "dimension" text NOT NULL, "residents" text[] NOT NULL, "url" text NOT NULL, "created" timestamptz NOT NULL, PRIMARY KEY ("id") );

@@ -1,0 +1,23 @@
+table:
+  name: character
+  schema: results
+object_relationships:
+  - name: location
+    using:
+      manual_configuration:
+        column_mapping:
+          location_id: id
+        insertion_order: null
+        remote_table:
+          name: location
+          schema: results
+array_relationships:
+  - name: episodes
+    using:
+      manual_configuration:
+        column_mapping:
+          id: character_id
+        insertion_order: null
+        remote_table:
+          name: character_episode
+          schema: results

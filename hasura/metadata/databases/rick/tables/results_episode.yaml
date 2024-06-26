@@ -1,0 +1,13 @@
+table:
+  name: episode
+  schema: results
+array_relationships:
+  - name: characters
+    using:
+      manual_configuration:
+        column_mapping:
+          id: episode_id
+        insertion_order: null
+        remote_table:
+          name: character_episode
+          schema: results
